@@ -1,0 +1,41 @@
+Voicelation Instructions
+========================
+
+This script displays real-time transcription of your speech in a transparent window.
+
+## Installation
+
+1.  **Prerequisites:** Make sure you have Python 3 installed on your system.
+
+2.  **Install Libraries:** Open your terminal or command prompt and navigate to the directory containing this script. Then, run the following command to install the required Python libraries:
+
+    ```
+    pip install -r requirements.txt
+    ```
+
+## How to Use
+
+1.  **Run the script:** In your terminal, execute the following command:
+
+    ```
+    python3 voicelation.py
+    ```
+
+2.  **Select a language:** You will be prompted to choose between English and Filipino for transcription.
+
+3.  **Start Speaking:** The application will start listening to your microphone, and the transcribed text will appear in a transparent window on your screen. The window displays up to 3 lines of text, with a maximum of 15 words per line.
+
+## Language Models
+
+The script uses local Vosk language models for transcription. It expects the following models to be present in the same directory:
+
+*   **English Model:** `vosk-model-small-en-us-0.15`
+*   **Filipino Model:** `vosk-model-tl-ph-generic-0.6`
+
+If the models are not found locally, the script will attempt to download them automatically. You can also download them manually from the Vosk website and place them in the correct folders.
+
+Vosk models are available at: https://alphacephei.com/vosk/models
+
+## Exiting the Application
+
+To close the transcription window, simply right-click on it.
